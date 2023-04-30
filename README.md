@@ -1,4 +1,4 @@
-# dot_counter
+# Dot_Counter
 
 A simple code to count the dots of Persian texts
 
