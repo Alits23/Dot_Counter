@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
                   Container(
                     width: 250,
                     child: TextField(
-                      // اضافه کردن یک اسپیس آخر متن برای حرف نشمردن ی که اگه آخر متن باشه
+                      // اضافه کردن یک اسپیس آخر متن برای  نشمردن حرف  ی که اگه آخر متن باشه
                       onChanged: (text) {
                         if (!text.endsWith(' ')) {
                           TextinputControl.value = TextEditingValue(
