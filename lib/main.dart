@@ -34,16 +34,6 @@ class _MyAppState extends State<MyApp> {
                   Container(
                     width: 250,
                     child: TextField(
-                      // اضافه کردن یک اسپیس آخر متن برای  نشمردن حرف  ی که اگه آخر متن باشه
-                      onChanged: (text) {
-                        if (!text.endsWith(' ')) {
-                          TextinputControl.value = TextEditingValue(
-                            text: '$text ',
-                            selection: TextSelection.collapsed(
-                                offset: text.length + 1),
-                          );
-                        }
-                      },
                       controller: TextinputControl,
                       textDirection: TextDirection.rtl,
                       textAlign: TextAlign.right,
@@ -63,6 +53,16 @@ class _MyAppState extends State<MyApp> {
                             color: Colors.black.withOpacity(0.5),
                             fontSize: 18,
                           )),
+                      // اضافه کردن یک اسپیس آخر متن برای  نشمردن حرف  ی که اگه آخر متن باشه
+                      onChanged: (text) {
+                        if (!text.endsWith(' ')) {
+                          TextinputControl.value = TextEditingValue(
+                            text: '$text ',
+                            selection:
+                                TextSelection.collapsed(offset: text.length),
+                          );
+                        }
+                      },
                     ),
                   ),
                   SizedBox(
