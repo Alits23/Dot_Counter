@@ -1,6 +1,6 @@
-# dot_calculator
+# Dot_Counter
 
-A new Flutter project.
+A simple code to count the dots of Persian texts
 
 ## Getting Started
 
